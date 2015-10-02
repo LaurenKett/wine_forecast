@@ -1,29 +1,38 @@
 @import "settings";
 @import "foundation";
 
-body {
-    background-image: url(../../../img/sea-sunset-beach-couple.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-h1 {
+/* HOMEPAGE */
+
+
+
+.wine-forecast {
     text-align: center;
     font-size: 3em;
+    font-family: 'helvetica', sans-serif;   
+    padding-top: 10px;
+     background-color: white;
     
 }
 
-
-h2 {
-    text-align: center;
-        margin-top: 200px;
-    }
-
-.zip-code {
+#wine-forecast{
 
 }
+
+
+.enter-zip {
+    text-align: center;
+        margin-top: 200px;
+        font-family: 'helvetica', sans-serif; 
+        font-size: 20px;
+    }
+
+.current-weather {
+    background-color: aquamarine;
+}
+
 .first-col {
-background-color: aquamarine;
+    background-color: aquamarine;
     min-height: 100px;
     font-family: sans-serif;
     font-size: 24px;
@@ -41,3 +50,39 @@ background-color: mediumvioletred;
 .button-round {
     font-size: 1.2em;
 }
+
+#homepage {
+    background-image: url(../../../img/sea-sunset-beach-couple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* App Page*/
+
+#app-body{
+    background-color: red;
+}
+
+#current-temp{
+     background-color: beige; 
+    position: absolute;
+    top: 0;
+    right:0
+}
+
+#today-high-low{
+    background-color: burlywood;
+
+}
+
+
+#current-outside{
+    background-color: azure;
+}
+
+#myCanvas{
+    width: 100%;
+}
+
+
+
