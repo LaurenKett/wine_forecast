@@ -55,30 +55,27 @@ background-color: mediumvioletred;
 /* App Page*/
 
 .app-body{
-    background-color:salmon;
+    background-color:white;
 }
 .current-weather {
-    background-color: orange;
+    background-color: skyblue;
 }
 
 .wine-description{
-    background-color: antiquewhite;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .current-temp{
-     background-color: beige; 
      font-size: 50px;
 }
 
 .today-high-low{
-    background-color: burlywood;
 }
 
 
 .current-outside{
-    background-color: azure;
 }
 
 #myCanvas{
@@ -88,10 +85,13 @@ background-color: mediumvioletred;
 }
 
 .five-day{
-    background-color: yellowgreen;
     font-family: sans-serif;
     background-color: (149,82,81,.5);
     margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-
+.date{
+    font-weight: bold;
+}
