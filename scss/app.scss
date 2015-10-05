@@ -4,8 +4,6 @@
 
 /* HOMEPAGE */
 
-
-
 .wine-forecast {
     text-align: center;
     font-size: 3em;
@@ -56,9 +54,11 @@ background-color: mediumvioletred;
 
 .app-body{
     background-color:white;
+    position: relative;
 }
 .current-weather {
-    background-color: skyblue;
+    float: right;
+    position: absolute;
 }
 
 .wine-description{
