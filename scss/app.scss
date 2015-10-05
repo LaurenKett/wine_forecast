@@ -54,8 +54,13 @@ background-color: mediumvioletred;
 
 .app-body{
     background-color:white;
-    position: relative;
+    
 }
+
+.weather-canvas{
+position: relative;
+}
+
 .current-weather {
     float: right;
     position: absolute;
