@@ -9,15 +9,17 @@
     font-size: 4em;
     font-family: 'Great Vibes', cursive;
     padding-top: 10px;    
+    color: darkblue;
 }
 
 
 
 .app-desc {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 18px;
     font-family: 'helvetica', sans-serif; 
     font-size: 10px;
+    color: darkblue;
     }
 
 
@@ -40,7 +42,7 @@ background-color: mediumvioletred;
 
 .button-round {
     font-size: 1.4em;
-    background-color: (28, 70,140);
+    color: darkblue;
 }
 
 .intro-wine-choice{
@@ -49,7 +51,7 @@ background-color: mediumvioletred;
 }
 
 .button-wine-option {
-    background-color: forestgreen;
+    background-color: darkblue;
     text-align: center;
     color:aliceblue;
     font-size: 20px;
@@ -65,6 +67,11 @@ background-color: mediumvioletred;
 }
 
 /* App Page*/
+
+
+
+
+
 
 .app-body{
     background-color:white;
@@ -130,5 +137,10 @@ position: relative;
     margin-bottom: 5px;
     max-width: 800px;
     max-height: 800px;
+    
+.wine-glass{
+    transform: scale(0.5, 0.5);
+    
+    }    
     
 }
