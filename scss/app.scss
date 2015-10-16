@@ -59,10 +59,12 @@ background-color: mediumvioletred;
     
 }
 
-#homepage {
+.napa-valley {
     background-image: url(../img/wine_background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto ;
+    /* opacity: 0.6; */
+     filter: alpha(opacity=60); /* For IE8 and earlier */
 
 }
 
@@ -139,7 +141,10 @@ position: relative;
     max-height: 800px;
     
 .wine-glass{
-    transform: scale(0.5, 0.5);
+   height: auto; 
+    width: auto; 
+    max-width: 40px; 
+    max-height: 10px;
     
     }    
     
