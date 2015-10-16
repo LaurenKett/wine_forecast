@@ -6,18 +6,18 @@
 
 .wine-forecast {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Great Vibes', cursive;
     padding-top: 10px;    
 }
 
 
 
-.enter-zip {
+.app-desc {
     text-align: center;
-        margin-top: 30px;
-        font-family: 'helvetica', sans-serif; 
-        font-size: 20px;
+    margin-top: 30px;
+    font-family: 'helvetica', sans-serif; 
+    font-size: 20px;
     }
 
 
@@ -43,8 +43,21 @@ background-color: mediumvioletred;
     background-color: (28, 70,140);
 }
 
+.intro-wine-choice{
+    font-size: 25px;
+    
+}
+
+.button-wine-option {
+    background-color: forestgreen;
+    text-align: center;
+    color:aliceblue;
+    font-size: 20px;
+    
+}
+
 #homepage {
-    background-image: url(../../../img/wine backgrounf.jpg);
+    background-image: url(../img/wine_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -104,13 +117,7 @@ position: relative;
 
 }
 
-.precip{
 
-}
-
-.temp{
-
-}
 
 .width{
     max-width: 800px;
