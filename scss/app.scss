@@ -62,11 +62,10 @@ background-color: mediumvioletred;
 }
 
 #homepage {
-    background-image: url(../img/wine_background.jpg);
+    background-image: url(../img/wine_background_transparency.svg);
     background-repeat: repeat;
     background-size: cover;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+   
 
 }
 
