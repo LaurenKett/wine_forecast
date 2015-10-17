@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 4em;
     font-family: 'Great Vibes', cursive;
-    padding-top: 10px;    
+    padding-top: 10px;      
     color: darkblue;
 }
 
@@ -16,16 +16,16 @@
 
 .app-desc {
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
     font-family: 'helvetica', sans-serif; 
-    font-size: 10px;
+    font-size: 4px;
     color: darkblue;
+    padding-bottom: 150px;
     }
 
 
 
 .first-col {
-    background-color: purple;
     min-height: 100px;
     font-family: sans-serif;
     font-size: 24px;
@@ -36,12 +36,13 @@ margin: auto;
 }
 
 .second-col{
-background-color: mediumvioletred;
     min-height: 100px;
 }
+
 .enter-location{
     margin: auto;
 }
+
 .button-round {
     font-size: 1.4em;
     background-color: darkblue;
@@ -60,7 +61,6 @@ background-color: mediumvioletred;
     color:aliceblue;
     font-size: 20px;
     shape-margin: 10px;
-    padding-bottom: 50 px;
 }
 
 #homepage {
@@ -149,10 +149,12 @@ background-color: white;
     filter: alpha(opacity=20); For IE8 and earlier */
     
 .wine-glass{
-   height: auto; 
-    width: auto; 
-    max-width: 40px; 
-    max-height: 10px;
+    /*  width:50%; */
+    max-width: 2px; 
+    height:auto;
+    
+    
+   
     
     }    
     
@@ -161,4 +163,9 @@ background-color: white;
 .app-body{
     
     
+}
+
+
+.large alert round button dropdown{
+font: 4em;
 }
