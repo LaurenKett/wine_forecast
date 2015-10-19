@@ -17,9 +17,9 @@
 
 .app-desc {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: 'helvetica', sans-serif; 
-    font-size: 4px;
+    font-size: 1em;
     color: darkblue;
     padding-bottom: 150px;
     }
@@ -42,6 +42,7 @@ margin: auto;
 
 .enter-location{
     margin: auto;
+    text-align: center;
 }
 
 .button-round {
@@ -59,9 +60,12 @@ margin: auto;
 .button-wine-option {
     background-color: darkblue;
     text-align: center;
-    color:aliceblue;
     font-size: 20px;
-    shape-margin: 10px;
+}
+
+.large alert round button dropdown {
+    background-color: darkblue;
+    text-align: center;
 }
 
 #homepage {
