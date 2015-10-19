@@ -94,6 +94,7 @@ position: relative;
 .current-weather {
     float: right;
     position: absolute;
+    font-weight: bold;
 }
 
 .wine-description{
@@ -101,7 +102,9 @@ position: relative;
     font-size: 25px;
     font-weight: lighter;
     text-align: left;
-    background-color: (5,75,50,.5);
+    background-color:rgba(116,169,95,0.3);
+    max-width: 800px;
+    max-height: 800px;
 
 }
 
@@ -137,37 +140,36 @@ position: relative;
 border-right: thin;
 }
 
-.condition{
-
-}
-
-
-
 .width{
     max-width: 800px;
     max-height: 800px;
 }
 
 .five-title{
-    font-weight: bold;
+
+    /* 
+    font-weight: lighter;
+     */
+    font-size: 15px;
     margin-bottom: 5px;
     max-width: 800px;
     max-height: 800px;
-    background-color:lightblue;
-    /* opacity: 0.2;
-    filter: alpha(opacity=20); For IE8 and earlier */
+    background-color:rgba(116,169,95,0.3);
+    text-align: center;
+}
     
-.wine-glass{
-    /*  width:50%; */
-    max-width: 2px; 
+/* .wine-glass{
+    width:50%;
+    max-width: 15px; 
     height:auto;
     
+    } */    
     
-   
-    
-    }    
-    
-}
+/* .weather-pic{ 
+    max-width: 10px;
+    max-height: auto;
+
+} */
 
 .app-body{
     
