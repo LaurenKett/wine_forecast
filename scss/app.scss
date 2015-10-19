@@ -81,13 +81,14 @@ margin: auto;
 
 
 
-
+.app-body{
+background-image: url(../img/wine_background_transparency.svg);
+}
 
 
 
 .weather-canvas{
 position: relative;
-background-color: white;
 }
 
 .current-weather {
@@ -96,9 +97,12 @@ background-color: white;
 }
 
 .wine-description{
-    font-family: 'Great Vibes', cursive;
+    font-family: sans-serif;
     font-size: 25px;
-    text-align: justify;
+    font-weight: lighter;
+    text-align: left;
+    background-color: (5,75,50,.5);
+
 }
 
 .current-temp{
@@ -114,23 +118,23 @@ background-color: white;
 
 #myCanvas{
     width: 100%;
-    max-height: 600px;
+    max-height: 900px;
     min-height: 300px;
-    background-color: white;
-    background-image: url(../img/Fall/AdobeStock_55333932_WM.jpeg);
+    background-image: url(../img/Spring/AdobeStock_89417562_WM.jpeg);
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 .five-day{
     font-family: sans-serif;
-    background-color: (149,82,81,.5);
     margin-top: 10px;
-    font-weight: bold;
-    text-decoration: underline;
+    font-weight: lighter;
+    border-bottom: solid;
+    border-bottom-width: thin;
 }
 
-.date{
+.day{
+border-right: thin;
 }
 
 .condition{
