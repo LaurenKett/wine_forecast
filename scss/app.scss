@@ -63,7 +63,7 @@ margin: auto;
 
 
 #homepage {
-    background-image: url(../img/Rose/ownAdobeStock_64297068.jpeg);
+    background-image: url(../img/Rose/rosetransparent.svg);
     background-repeat: repeat;
     background-size: cover;
    
@@ -89,6 +89,7 @@ position: relative;
     position: absolute;
     font-weight: bold;
     color: #02521F;
+    font-family: 'Great Vibes', cursive;
   
     
 }
@@ -140,17 +141,24 @@ position: relative;
 }
 
 .current-temp{
-     font-size: 50px;
+    font-size: 50px;
     color: #02521F;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
 }
 
 .today-high-low{
     color: #02521F;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
 }
 
 
 .current-outside{
     color: #02521F;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    
 }
 
 #myCanvas{
@@ -174,6 +182,8 @@ position: relative;
 .day{
     border-right: thin;
     color: #02521F;
+    font-family: 'Great Vibes', cursive;
+
 }
 
 .width{
