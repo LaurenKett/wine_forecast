@@ -16,24 +16,33 @@
         <h1 class="wine-forecast">Wine Forecast</h1>
     
    
-    <div class="small-12 medium-10 large-12 small-centered columns">
+    <div class="small-12 medium-10 large-12 large-centered columns">
         <h4 class="App-desc">Wine pairing service based on the weather</h4>
     </div>
     
       
        
     <div class="row">
-        <div class="small-12 medium-10 large-6 small-centered columns">
+        <div class="small-6 small-centered columns">
            <div class="intro-wine-choice">
                 Do you prefer:
             </div>
-            <button data-dropdown="drop" aria-controls="drop" aria-expanded="false" class="large alert round button dropdown">Wine Preference
+            
+            <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Wine Preference</button><br>
+<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <li><a href="#">White</a></li>
+  <li><a href="#">Red</a></li>
+  <li><a href="#">Both</a></li>
+</ul>
+            
+            
+            <!-- <button data-dropdown="drop" aria-controls="drop" aria-expanded="false" class="large alert round button dropdown wine-dropdown">Wine Preference
             </button><br>
             <ul id="drop" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false" tabindex="-1">
                   <li><a href="#">White</a></li>
                   <li><a href="#">Red</a></li>
                   <li><a href="#">Both</a></li>
-            </ul>
+            </ul> -->
            
     
         </div>
