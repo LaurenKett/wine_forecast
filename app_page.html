@@ -6,25 +6,27 @@
     <title>Wine Forecast</title>
     <link rel="stylesheet" href="./bower_components/foundation/css/foundation.css">
     <link rel="stylesheet" href="stylesheets/app.css">
-    <script src="bower_components/modernizr/modernizr.js">
-    </script>
+    
   </head>
   <body class="app-body">
   
-  
   <section>
+        
       <div class="weather-canvas row">
         <div class="small-12 medium-12 large-12 small-centered columns current-weather text-right">
-            <h1 class="current-temp text-right">80<sup>o</sup></h1>
+            <h1 id="current-temp" class="text-right">80<sup>o</sup></h1>
             <h2 class="current-outside text-right">Cloudy</h2>
-            <h3 class="today-high-low text-right">75<sup>o</sup>/84<sup>o</sup></h3>
+            <div class="row">
+              <div id="myCanvas">
+            
+            </div>
+        </div>
             
         </div>
-        <canvas id="myCanvas"  height="100">
-            
-        </canvas>
+        
                 
       </div>
+      
   </section>
   
   <section>
@@ -133,5 +135,8 @@
                    
   </section>
   
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="js/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
   </body>
 </html>
