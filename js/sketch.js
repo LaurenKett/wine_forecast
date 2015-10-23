@@ -11,6 +11,10 @@ var temp;
 var d = new Date();
 var n = d.getMonth();
 var location;
+var spring;
+var summer;
+var fall;
+var winter;
 
 function setup() {
   // Request the data from openweathermap    
@@ -110,7 +114,7 @@ if (n >= 10|| n<=11){
 }
 
 
-
+//if winter, randomly pull from these recommendation options
 
 
 
