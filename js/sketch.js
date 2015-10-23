@@ -67,10 +67,19 @@ function gotForecast() {
     
     
     
-    if (weather.id == 801 ||802 ||803 ){
+    if (weather.weather[0].description == 801 ||802 ||803 ){
 document.getElementById("weather.pic").innerHTML= 
         "<img src="img/partlycloudy.svg"></img>";
-
+    }
+        
+   if (weather.weather[0].description == 804 ){
+document.getElementById("weather.pic").innerHTML= 
+        "<img src="img/cloudy.svg"></img>";
+   }
+       
+    if (weather.weather[0].description == 800 ){
+document.getElementById("weather.pic").innerHTML= 
+        "<img src="img/sunny.svg"></img>";           
 }
     
 }
