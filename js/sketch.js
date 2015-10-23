@@ -64,10 +64,16 @@ function gotForecast() {
     
     
 
+    
+    
+    
+    if (weather.id == 801 ||802 ||803 ){
+document.getElementById("weather.pic").innerHTML= 
+        "<img src="img/partlycloudy.svg"></img>";
+
 }
     
-    
-    
+}
     
     
 //take the five day forecast, pull hours at 3 hour intervals for bottom half of the app. Get the description to control the icons. 
