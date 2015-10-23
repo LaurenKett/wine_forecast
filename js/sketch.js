@@ -69,17 +69,17 @@ function gotForecast() {
     
     if (weather.weather[0].description == 801 ||802 ||803 ){
 document.getElementById("weather.pic").innerHTML= 
-        "<img src="img/partlycloudy.svg"></img>";
+        "<img src='img/partlycloudy.svg'>";
     }
         
    if (weather.weather[0].description == 804 ){
 document.getElementById("weather.pic").innerHTML= 
-        "<img src="img/cloudy.svg"></img>";
+        "<img src='img/cloudy.svg'>";
    }
        
     if (weather.weather[0].description == 800 ){
 document.getElementById("weather.pic").innerHTML= 
-        "<img src="img/sunny.svg"></img>";           
+        "<img src='img/sunny.svg'>";           
 }
     
 }
@@ -91,21 +91,23 @@ document.getElementById("weather.pic").innerHTML=
 
 
 //defining seasons
-//if (n <= 3|| n==12){
-//Season = Winter;
-//}
-//
-//if (n >= 3|| n<=6){
-//Season = Spring;
-//}
-//
-//if (n >= 7|| n<=9){
-//Season = Summer;
-//}
-//
-//if (n >= 10|| n<=11){
-//Season = Fall;
-//}
+
+
+if (n <= 3|| n==12){
+var season = Winter;
+}
+
+if (n >= 3|| n<=6){
+season = Spring;
+}
+
+if (n >= 7|| n<=9){
+ season = Summer;
+}
+
+if (n >= 10|| n<=11){
+ season = Fall;
+}
 
 
 
