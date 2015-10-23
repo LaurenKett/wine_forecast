@@ -10,13 +10,21 @@ var units = "&units=imperial";
 var temp;
 var d = new Date();
 var n = d.getMonth();
+var location;
 
 function setup() {
-  // Request the data from openweathermap
-  var url = base_url + city_url + app_id + units;
+  // Request the data from openweathermap    
+    
+
+   
+}
+
+function weatherLookup(){
+var url = base_url + city_url + app_id + units;
   loadJSON(url, gotWeather);
-    var url = forecast_url + city_url + app_id + units;
+var url = forecast_url + city_url + app_id + units;
     loadJSON(url, gotForecast);
+ 
 }
 
 function draw() {
@@ -41,9 +49,28 @@ if (weather.weather[0].description=="broken clouds") {
 }
 
 
-function gotForecast(){
-//take the five day forecast, pull hours at 3 hour intervals for bottom half of the app. Get the description to control the icons. 
+function gotForecast() {
+
+    var today = d.getDay();
+    
+    var weekday = new Array(7);
+    weekday[0]=  "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    
+    
+
 }
+    
+    
+    
+    
+    
+//take the five day forecast, pull hours at 3 hour intervals for bottom half of the app. Get the description to control the icons. 
 
 //depending on the season, recommend different wines
 
@@ -67,20 +94,7 @@ function gotForecast(){
 
 
 
-//five day forecast
-//object 1,3,7 ( for timing to pull from 3 hour api forecast offers)
-//
-//
-//var weekday = new Array(7);
-//weekday[0]=  "Sunday";
-//weekday[1] = "Monday";
-//weekday[2] = "Tuesday";
-//weekday[3] = "Wednesday";
-//weekday[4] = "Thursday";
-//weekday[5] = "Friday";
-//weekday[6] = "Saturday";
-//
-//var dayOfTheWeek = weekday[d.getDay()];
+
 
 
 
