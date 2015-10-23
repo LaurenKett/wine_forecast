@@ -41,10 +41,7 @@ function gotWeather(weather) {
   temp = weather.main.temp;
     console.log(temp);
     $("#current-temp").html(parseInt(temp)+"&deg;");
-    
-    
     $(".current-outside").text(weather.weather[0].description);
-
 
 if (weather.weather[0].description=="broken clouds") {
  $(".current-outside").text("Cloudy");                          
