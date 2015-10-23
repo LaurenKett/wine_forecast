@@ -98,19 +98,19 @@ document.getElementById("weather.pic").innerHTML=
 
 
 if (n <= 3|| n==12){
-var season = Winter;
+var season = winter;
 }
 
 if (n >= 3|| n<=6){
-season = Spring;
+season = spring;
 }
 
 if (n >= 7|| n<=9){
- season = Summer;
+ season = summer;
 }
 
 if (n >= 10|| n<=11){
- season = Fall;
+ season = fall;
 }
 
 
