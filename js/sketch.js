@@ -91,10 +91,12 @@ document.getElementById("weather.pic").innerHTML=
 //depending on the season, recommend different wines
 
 
+
+
 //defining seasons
 
 
-if (n <= 3|| n==12){
+if (n <= 2|| n==11){
 var season = winter;
 }
 
@@ -109,6 +111,7 @@ if (n >= 7|| n<=9){
 if (n >= 10|| n<=11){
  season = fall;
 }
+
 
 
 //if winter, randomly pull from these recommendation options
