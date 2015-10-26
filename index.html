@@ -7,9 +7,11 @@
     <title>Wine Forecast</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script>"js/p5.min.js"</script>
-    <script>"js/app.js"</script>
+<!--    <script src="bower_components/modernizr/modernizr.js"></script>-->
+    <script src="js/p5.min.js"></script>
+    <script src="js/p5.dom.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/openingpage.js"></script>
   </head>
   
   <body id="homepage">
@@ -31,24 +33,28 @@
         </div>
     </div>
        
+<!--
     <div class="row">
         <div class="small-12 medium-10 large-6 small-centered columns zip-code">
           <div class="row collapse">
-            <div class="small-10 columns">
-            
-              <input type="text" placeholder="Type location here">
+            <div id="inputParent"class="small-10 columns">
+ <input type="text" placeholder="Type location here">
         </div>
         <div onclick="weatherLookup()" id="location-button" class="small-2 columns">
-          <a href=" app_page.html" class="button postfix button-round text-center"><i class="fa fa-arrow-right"></i></a>
+  <a href=" app_page.html" class="button postfix button-round text-center"><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
-      </div>
+      </div>  
+-->
+
+    <div class="row">
+        <div id="inputParent" class="small-8 columns"></div>
+        <a id="link" href="#"><div id="location-button" class="small-2 columns"></div></a>
     </div>
-  </div>  
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script>"js/p5.min.js"</script>
-    <script>"js/sketch.js"</script>
   </body>
 </html>
