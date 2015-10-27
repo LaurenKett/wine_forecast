@@ -16,8 +16,8 @@ function setup() {
 
 function addCityParameter() {
     city = cityName.value();
-    console.log();
-//    document.getElementById("link").href = "app_page.html/?city=" + city;
+    console.log(city);
+    //document.getElementById("link").href = "app_page.html/?city=" + city;
 }
 
 //function weatherLookup(){
@@ -35,5 +35,3 @@ function addCityParameter() {
 //    temp = weather.main.temp;
 //    console.log(temp);                         
 //}
-
-//form and input button for getting city

@@ -48,6 +48,41 @@ function gotWeather(weather) {
      $(".current-outside").text("Cloudy");                          
     } 
 
+    if (gotWeather.weather[0].description == 801 ||gotWeather.weather[0].description == 802 ||gotWeather.weather[0].description == 803 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/partlycloudy.svg'>";
+    }
+        
+   if (gotWeather.weather[0].description == 804 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/cloudy.svg'>";
+   }
+       
+    if (gotWeather.weather[0].description == 800 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/sunny.svg'>";           
+}
+    
+    if (gotWeather.weather[0].description == 500 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotWeather.weather[0].description == 501 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotWeather.weather[0].description == 502 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotWeather.weather[0].description == 503 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotWeather.weather[0].description == 504 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
 }
 
 
@@ -64,7 +99,7 @@ function gotForecast() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     
-    var season = getSeason(d.getMonth());
+var season = getSeason(d.getMonth());
 
 var d1 = new Date();
 var today = d1.getDay(); 
@@ -110,32 +145,9 @@ for (var i = 1; i <= 5; i++) {
 	nextDay = new Date(j.getTime() + i * 24 * 60 * 60 * 1000);
 	var day = nextDay.getDay();
 	console.log(weekday[day]);
-};
-    
-    
-    
-    if (gotWeather.weather[0].description == 801 ||gotWeather.weather[0].description == 802 ||gotWeather.weather[0].description == 803 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/partlycloudy.svg'>";
-    
-    }
-        
-   if (gotWeather.weather[0].description == 804 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/cloudy.svg'>";
-   }
-       
-    if (gotWeather.weather[0].description == 800 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/sunny.svg'>";           
+};  
 }
     
-}
-    
-    
-//take the five day forecast, pull hours at 3 hour intervals for bottom half of the app. Get the description to control the icons. 
-
-
 //defining seasons
 function getSeason(month) {
     switch(month) {
@@ -160,9 +172,11 @@ function getSeason(month) {
             return 'fall';
         break;
     }
+        
+        
     //depending on the season, recommend different wines
     if ('fall' == getSeason) {
-    $(".wine-description").text("It might be fall, but this heat begs for a cold and crisp wine. Pair a Prosecco from the veneto region with Linguini with clams and fennel."); 
+    document.getElementById(".wine-description").innerHTML="It might be fall, but this heat begs for a cold and crisp wine. Pair a Prosecco from the veneto region with Linguini with clams and fennel."; 
     }
     
     if ('winter' == getSeason) {
@@ -181,8 +195,7 @@ function getSeason(month) {
 function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++)
-    {
+    for (var i = 0; i < sURLVariables.length; i++) {
         var sParameterName = sURLVariables[i].split('=');
         if (sParameterName[0] == sParam) {
             return sParameterName[1];
