@@ -48,41 +48,7 @@ function gotWeather(weather) {
      $(".current-outside").text("Cloudy");                          
     } 
 
-    if (gotWeather.weather[0].description == 801 ||gotWeather.weather[0].description == 802 ||gotWeather.weather[0].description == 803 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/partlycloudy.svg'>";
-    }
-        
-   if (gotWeather.weather[0].description == 804 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/cloudy.svg'>";
-   }
-       
-    if (gotWeather.weather[0].description == 800 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/sunny.svg'>";           
-}
     
-    if (gotWeather.weather[0].description == 500 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/raining.svg'>";
-    }
-    if (gotWeather.weather[0].description == 501 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/raining.svg'>";
-    }
-    if (gotWeather.weather[0].description == 502 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/raining.svg'>";
-    }
-    if (gotWeather.weather[0].description == 503 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/raining.svg'>";
-    }
-    if (gotWeather.weather[0].description == 504 ){
-document.getElementById("weather-pic").innerHTML= 
-        "<img src='img/raining.svg'>";
-    }
 }
 
 
@@ -146,6 +112,42 @@ for (var i = 1; i <= 5; i++) {
 	var day = nextDay.getDay();
 	console.log(weekday[day]);
 };  
+    
+    if (gotWeather.weather[0].description == 801 ||gotWeather.weather[0].description == 802 ||gotWeather.weather[0].description == 803 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/partlycloudy.svg'>";
+    }
+        
+   if (gotForecast.weather[0].description == 804 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/cloudy.svg'>";
+   }
+       
+    if (gotForecast.weather[0].description == 800 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/sunny.svg'>";           
+}
+    
+    if (gotForecast.weather[0].description == 500 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotForecast.weather[0].description == 501 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotForecast.weather[0].description == 502 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotForecast.weather[0].description == 503 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
+    if (gotForecast.weather[0].description == 504 ){
+document.getElementById("weather-pic").innerHTML= 
+        "<img src='img/raining.svg'>";
+    }
 }
     
 //defining seasons
